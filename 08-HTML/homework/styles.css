@@ -1,0 +1,17 @@
+h1{
+    color:lightgreen;
+ }
+ img{
+   width:400px;
+ }
+ #thirdDiv{
+     background-color: antiquewhite;
+     height:600px;
+     width:500px;
+     padding: 50px;
+     border: 4mm ridge rgba(211, 220, 50, .6);;
+ }
+ #spanId{
+  font-size: 18px;
+  margin: 50px;
+ }
