@@ -240,7 +240,6 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var arraydos=[];
-  var contador=0;
   for(i=0; i < array.length; i++)
   {
     if(array[i]==='Enero' || array[i]==='Marzo' || array[i]==='Noviembre')
@@ -248,28 +247,15 @@ function mesesDelAño(array) {
   
       arraydos.push(array[i]);
     }
-
-   else if(array[i]!='Enero' && array[i]!='Marzo' && array[i]!='Noviembre')
-      {
-        continue;
-      }
-}
-for(i=0; i < arraydos.length; i++)
-  {
-    if(arraydos[i]==='Enero' || arraydos[i]==='Marzo' || arraydos[i]==='Noviembre')
+  }
+    if(arraydos.length===3)
     {
-  contador=contador+1;
+    return arraydos;
     }
-    if(contador===arraydos.length - 2)
-    {
-      return arraydos;
-    }
-
-   else 
-      {
-        return "No se encontraron los meses pedidos";
-      }
-}
+     else 
+          {
+            return "No se encontraron los meses pedidos";
+          }
 }
 
 
